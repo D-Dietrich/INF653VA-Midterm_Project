@@ -1,0 +1,144 @@
+body { background-color: #a1a3a8; 
+    font-family: Arial, sans-serif;}
+
+#sheet { margin: 0 auto;
+        width: 100%; 
+        background-color: #FFFFFF; 
+        border: 2px solid #000000;}
+
+h1 { background-color: #3498DB;
+ border: 2px solid #000000;
+  margin: auto;
+ font-size: 1.5em;
+  text-align: center;
+ padding: .25em;
+}
+
+h2 {
+  text-align: center;
+}
+main { margin: auto; }
+
+#myForm {
+    display: grid;
+    width: 90%; 
+    padding: 10px; 
+    margin: auto;}
+
+select{
+    width: 80%;
+}
+
+input {
+    width: 80%;
+    margin-left: 10px;
+}
+
+#table_div{
+    overflow-x: auto;
+}
+table {
+    width: 90%;
+    margin: 30px auto;
+    min-width: 300;
+    border-collapse: collapse;
+}
+.big_table {
+min-width: 600px;
+}
+
+tr {
+    border-bottom: 2px dashed #000;
+    height: 40px;
+}
+
+tr:nth-child(even) {
+    background-color: #c4c6cc;
+  }
+
+td {
+    width: 16.6%;
+    text-align: center;
+    border-left: 2px dashed #000;
+    border-right: 2px dashed #000;
+}
+
+#delete_button {
+    text-align: right;
+    width: 10%;
+}
+
+#admin td{
+    width: 14.27%;
+    text-align: center;
+}
+
+#delete_button  button {
+    color: #FFFFFF;
+	background: #A52A2A;
+	padding: 5px 6px;
+	text-decoration: none;
+    
+}
+
+.sub_button {
+    margin: auto;
+	height: 3em;
+    width: 70%;
+	background: #3498DB;
+	border: 2px solid #000000;
+	border-radius: 5px; 
+	padding: 5px 20px;
+    box-shadow: 2px 3px;
+}
+.add_button {
+    margin: auto;
+	height: 3em;
+    width: 70%;
+	background: #DB7734;
+	border: 2px solid #000000;
+	border-radius: 5px; 
+	padding: 5px 20px;
+    box-shadow: 2px 3px;
+}
+footer { background-color: #e7dbdb;
+    font-size: 75%;
+    font-style: italic;
+    text-align: right;
+    font-family: Georgia, "Times New Roman", serif;
+    padding: 2em;}
+
+@media (min-width: 600px) {
+    #sheet { margin: 0 auto;
+        width: 80%; min-width: 500px;
+    }
+    table {
+        width: 70%;
+        margin: 30px auto;
+        border-collapse: collapse;
+    }
+    tr {
+        border-bottom: 2px solid #000;
+    }
+   
+    td{
+        border-left: none;
+        border-right: none;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    .sub_button, .add_button{
+        width:30%;
+    }
+}
+@media (min-width: 1024px) {
+    label{
+        margin:auto;
+    }
+    select, input{ 
+        max-width: 200px;
+        margin:auto;
+    }
+    
+}
