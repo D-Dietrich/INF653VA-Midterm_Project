@@ -52,7 +52,7 @@ else if ($action == 'delete_vehicle') {
     $vID = filter_input(INPUT_POST, 'id', FILTER_VALIDATE_INT);
     if ($vID == NULL || $vID == FALSE) 
         { $error = "Missing or incorrect Vehicle ID."; 
-        include('view/error.php');
+        include('../view/error.php');
     }
     else {
         delete_vehicle($vID); 
@@ -76,7 +76,7 @@ else if ($action == 'add_vehicle') {
     $price = filter_input(INPUT_POST, 'price', FILTER_VALIDATE_INT);
     if ($make_id == NULL || $make_id == FALSE || $type_id == NULL || $type_id == FALSE || $class_id == NULL || $class_id == FALSE || $year == NULL || $year == FALSE || $model == NULL || $model == FALSE || $price == NULL || $price == FALSE) 
         { $error = "Invalid data. Check all fields and try again."; 
-            include('view/error.php');
+            include('../view/error.php');
     } 
     else {
         add_vehicle($class_id, $make_id, $type_id, $model, $price, $year); 
@@ -93,7 +93,7 @@ else if ($action == 'delete_make') {
     $id = filter_input(INPUT_POST, 'id', FILTER_VALIDATE_INT);
     if ($id == NULL || $id == FALSE ) 
         { $error = "Missing or incorrect Make ID."; 
-        include('view/error.php');
+        include('../view/error.php');
     }
     else {
         delete_make($id); 
@@ -105,7 +105,7 @@ else if ($action == 'add_make') {
 
     if ($makeName == NULL || $makeName == FALSE) 
     { $error = "Invalid data. Check all fields and try again."; 
-        include('view/error.php');
+        include('../view/error.php');
     } 
     else {
         add_make($makeName); 
@@ -122,7 +122,7 @@ else if ($action == 'delete_type') {
     $id = filter_input(INPUT_POST, 'id', FILTER_VALIDATE_INT);
     if ($id == NULL || $id == FALSE ) 
         { $error = "Missing or incorrect Type ID."; 
-        include('view/error.php');
+        include('../view/error.php');
     }
     else {
         delete_type($id); 
@@ -134,7 +134,7 @@ else if ($action == 'add_type') {
 
     if ($typeName == NULL || $typeName == FALSE) 
     { $error = "Invalid data. Check all fields and try again."; 
-        include('view/error.php');
+        include('../view/error.php');
     } 
     else {
         add_type($typeName); 
@@ -151,7 +151,7 @@ else if ($action == 'delete_class') {
     $id = filter_input(INPUT_POST, 'id', FILTER_VALIDATE_INT);
     if ($id == NULL || $id == FALSE ) 
         { $error = "Missing or incorrect Class ID."; 
-        include('view/error.php');
+        include('../view/error.php');
     }
     else {
         delete_class($id); 
@@ -163,7 +163,7 @@ else if ($action == 'add_class') {
 
     if ($className == NULL || $className == FALSE) 
     { $error = "Invalid data. Check all fields and try again."; 
-        include('view/error.php');
+        include('../view/error.php');
     } 
     else {
         add_class($className); 
