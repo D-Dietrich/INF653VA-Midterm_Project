@@ -1,9 +1,9 @@
 <?php
 require('../model/database.php'); 
-require('../controllers/classes.php'); 
-require('../controllers/makes.php'); 
-require('../controllers/types.php'); 
-require('../controllers/vehicles.php'); 
+require('controllers/classes.php'); 
+require('controllers/makes.php'); 
+require('controllers/types.php'); 
+require('controllers/vehicles.php'); 
 
 $action = filter_input(INPUT_POST, 'action'); 
 if ($action == NULL) {
